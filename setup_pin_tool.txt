@@ -1,0 +1,14 @@
+In CacheSim directory
+
+Set PIN_ROOT to the pin installation path
+PIN_ROOT=/path/to/pin export PIN_ROOT
+Run make for memory_trace tool, targeting the for the desired architecture, i.e. for intel64:
+make obj-intel64/memory_trace.so TARGET=intel64
+
+In working directory
+
+Use pin to run the pin tool memory_trace, with the executable and its arguments. For example:
+
+$PIN_ROOT/pin -t /path/to/CacheSim/obj-intel64/memory_trace.so -o memory.txt -match routine_name_string -- /path/to/executable/exe exe_args
+
+This will search the executbales image for routines names containing the substring routine_name_string, and output the memory trace to the file memory.txt
