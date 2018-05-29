@@ -1,5 +1,5 @@
-CacheSim is an example of how to use Intel Pin to instrument a multithreaded code, then performing data analysis on the results.
-CacheSim consists of an Intel Pin tool and a Jupyter notebook with DataShader to handle the potentially large amounts of data. 
+CacheSim is an example of how to use Intel Pin to instrument a multithreaded code, to produce data for further analysis.
+CacheSim consists of an Intel Pin tool and a Jupyter notebook, with DataShader to handle potentially large amounts of data. 
 The Pin tool is used to instrument the code, to produce a memory trace of routines matching a user supplied string, for a 
 specified number of calls, and for each thread. The Jupyter notebook can then be used to perform multithreaded cache simulations on the 
 data, and to visualize the cache levels accessed by each thread.
