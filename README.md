@@ -26,7 +26,7 @@ Run make for memory_trace tool, targeting the desired architecture, i.e. for int
 
 Then use pin to run the pin tool memory_trace, with the executable and its arguments. For example:
 
-    $PIN_ROOT/pin -t /path/to/CacheSim/obj-intel64/memory_trace.so -o memory.txt -match routine_name_string -- /path/to/executable/exe exe_args
+    $PIN_ROOT/pin -t /path/to/cache_sim/obj-intel64/memory_trace.so -o memory.txt -match routine_name_string -- /path/to/executable/exe exe_args
 
 This will search the executable image for routine names containing the substring routine_name_string, and output the memory trace to the file memory.txt
 
